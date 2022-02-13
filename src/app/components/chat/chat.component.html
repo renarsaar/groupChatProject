@@ -1,0 +1,11 @@
+<div class="list-group list-group-flush" [style.color]="chat.sender?.chatColor || 'blue'">
+  <div>
+    <span>{{ chat.sender?.userName || 'No username' }}</span>
+    <span> - {{ chat.sender?.location || 'No location' }} | </span>
+    <span>{{ chat.date | date: 'short'}}</span>
+  </div>
+
+  <div>
+    <p>{{ chat.message }}</p>
+  </div>
+</div>
